@@ -30,8 +30,11 @@ const isPasswordVisible = ref(false)
     >
       <VCardItem class="justify-center">
         <template #prepend>
+          <!--          <div class="d-flex"> -->
+          <!--            <div v-html="logo" /> -->
+          <!--          </div> -->
           <div class="d-flex">
-            <div v-html="logo" />
+            <img src='@images/favicon.ico' alt="Logo" style="width: 30px; height: 30px;">
           </div>
         </template>
 
