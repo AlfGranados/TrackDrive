@@ -11,8 +11,8 @@ const accountData = {
   address: '123 Main St, New York, NY 10001',
   state: 'New York',
   zip: '10001',
-  country: 'USA',
-  language: 'English',
+  country: 'México',
+  language: 'Español',
   timezone: '(GMT-11:00) International Date Line West',
   currency: 'USD',
 }
@@ -103,7 +103,7 @@ const currencies = [
 <template>
   <VRow>
     <VCol cols="12">
-      <VCard title="Account Details">
+      <VCard title="Detalles de la cuenta">
         <VCardText class="d-flex">
           <!-- 👉 Avatar -->
           <VAvatar
@@ -124,7 +124,7 @@ const currencies = [
                   icon="mdi-cloud-upload-outline"
                   class="d-sm-none"
                 />
-                <span class="d-none d-sm-block">Upload new photo</span>
+                <span class="d-none d-sm-block">Sube una nueva foto</span>
               </VBtn>
 
               <input
@@ -151,7 +151,7 @@ const currencies = [
             </div>
 
             <p class="text-body-1 mb-0">
-              Allowed JPG, GIF or PNG. Max size of 800K
+              Se permiten JPG, GIF or PNG. Max size of 800K
             </p>
           </form>
         </VCardText>
@@ -169,7 +169,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.firstName"
-                  label="First Name"
+                  label="Nombre"
                 />
               </VCol>
 
@@ -180,7 +180,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.lastName"
-                  label="Last Name"
+                  label="Apellido"
                 />
               </VCol>
 
@@ -203,7 +203,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.org"
-                  label="Organization"
+                  label="Organizacion"
                 />
               </VCol>
 
@@ -214,7 +214,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.phone"
-                  label="Phone Number"
+                  label="Número Telefónico"
                 />
               </VCol>
 
@@ -225,7 +225,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.address"
-                  label="Address"
+                  label="Dirección"
                 />
               </VCol>
 
@@ -236,7 +236,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.state"
-                  label="State"
+                  label="Estado"
                 />
               </VCol>
 
@@ -247,7 +247,7 @@ const currencies = [
               >
                 <VTextField
                   v-model="accountDataLocal.zip"
-                  label="Zip Code"
+                  label="Código Postal"
                 />
               </VCol>
 
@@ -258,7 +258,7 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.country"
-                  label="Country"
+                  label="País"
                   :items="['USA', 'Canada', 'UK', 'India', 'Australia']"
                 />
               </VCol>
@@ -270,7 +270,7 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.language"
-                  label="Language"
+                  label="Idioma"
                   :items="['English', 'Spanish', 'Arabic', 'Hindi', 'Urdu']"
                 />
               </VCol>
@@ -282,7 +282,7 @@ const currencies = [
               >
                 <VSelect
                   v-model="accountDataLocal.timezone"
-                  label="Timezone"
+                  label="Zona Horaria"
                   :items="timezones"
                   :menu-props="{ maxHeight: 200 }"
                 />
@@ -306,7 +306,7 @@ const currencies = [
                 cols="12"
                 class="d-flex flex-wrap gap-4"
               >
-                <VBtn>Save changes</VBtn>
+                <VBtn>Guardar Cambios</VBtn>
 
                 <VBtn
                   color="secondary"
@@ -325,12 +325,12 @@ const currencies = [
 
     <VCol cols="12">
       <!-- 👉 Deactivate Account -->
-      <VCard title="Deactivate Account">
+      <VCard title="Desactivar Cuenta">
         <VCardText>
           <div>
             <VCheckbox
               v-model="isAccountDeactivated"
-              label="I confirm my account deactivation"
+              label="Confirmo la desactivación de mi cuenta"
             />
           </div>
 
@@ -339,7 +339,7 @@ const currencies = [
             color="error"
             class="mt-3"
           >
-            Deactivate Account
+            Cuenta Desactivada
           </VBtn>
         </VCardText>
       </VCard>

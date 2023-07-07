@@ -1,25 +1,25 @@
 <script setup>
 const statistics = [
   {
-    title: 'Sales',
+    title: 'Ventas',
     stats: '245k',
     icon: 'mdi-trending-up',
     color: 'primary',
   },
   {
-    title: 'Customers',
+    title: 'Clientes',
     stats: '12.5k',
     icon: 'mdi-account-outline',
     color: 'success',
   },
   {
-    title: 'Product',
+    title: 'Producto',
     stats: '1.54k',
     icon: 'mdi-cellphone-link',
     color: 'warning',
   },
   {
-    title: 'Revenue',
+    title: 'Ingresos',
     stats: '$88k',
     icon: 'mdi-currency-usd',
     color: 'info',
@@ -30,7 +30,7 @@ const statistics = [
 <template>
   <VCard>
     <VCardItem>
-      <VCardTitle>Transactions</VCardTitle>
+      <VCardTitle>Transaciones</VCardTitle>
 
       <template #append>
         <div class="me-n3">
@@ -41,8 +41,8 @@ const statistics = [
 
     <VCardText>
       <h6 class="text-sm font-weight-medium mb-12">
-        <span>Total 48.5% Growth 😎</span>
-        <span class="font-weight-regular"> this month</span>
+        <span>48.5% de crecimiento total 😎</span>
+        <span class="font-weight-regular"> este mes</span>
       </h6>
 
       <VRow>
