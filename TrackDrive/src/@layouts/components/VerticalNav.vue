@@ -58,10 +58,10 @@ const handleNavScroll = evt => {
           to="/"
           class="app-logo d-flex align-center gap-x-3 app-title-wrapper"
         >
-          <div
-            class="d-flex"
-            v-html="logo"
-          />
+          <!--          <div -->
+          <!--            class="d-flex" -->
+          <!--            v-html="logo" -->
+          <!--          /> -->
 
           <h1 class="font-weight-medium leading-normal text-xl text-uppercase">
             TrackDrive
